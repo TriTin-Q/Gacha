@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Fichiers sources">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Fichiers de ressources">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="State">
+      <UniqueIdentifier>{8f2c077f-66e1-47d8-b26a-df76824a7bcf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities">
+      <UniqueIdentifier>{8149f11c-aa80-419f-961d-57dfd7df0153}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Buttons">
+      <UniqueIdentifier>{50d1ca33-cee2-42f2-84c5-538fa41ff494}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Game.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="GameState.cpp">
+      <Filter>State</Filter>
+    </ClCompile>
+    <ClCompile Include="State.cpp">
+      <Filter>State</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity.cpp">
+      <Filter>Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="MainMenuState.cpp">
+      <Filter>State</Filter>
+    </ClCompile>
+    <ClCompile Include="Personnage.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Accueil.cpp">
+      <Filter>State</Filter>
+    </ClCompile>
+    <ClCompile Include="Box.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="ButtonReturn.cpp">
+      <Filter>Buttons</Filter>
+    </ClCompile>
+    <ClCompile Include="ButtonCharacter.cpp">
+      <Filter>Buttons</Filter>
+    </ClCompile>
+    <ClCompile Include="Button.cpp">
+      <Filter>Buttons</Filter>
+    </ClCompile>
+    <ClCompile Include="ButtonInGame.cpp">
+      <Filter>Buttons</Filter>
+    </ClCompile>
+    <ClCompile Include="FichePersonnage.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.hpp">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="GameState.hpp">
+      <Filter>State</Filter>
+    </ClInclude>
+    <ClInclude Include="State.hpp">
+      <Filter>State</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity.hpp">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="MainMenuState.hpp">
+      <Filter>State</Filter>
+    </ClInclude>
+    <ClInclude Include="Personnage.hpp">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="Accueil.hpp">
+      <Filter>State</Filter>
+    </ClInclude>
+    <ClInclude Include="Box.hpp">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="Button.hpp">
+      <Filter>Buttons</Filter>
+    </ClInclude>
+    <ClInclude Include="ButtonCharacter.hpp">
+      <Filter>Buttons</Filter>
+    </ClInclude>
+    <ClInclude Include="ButtonInGame.hpp">
+      <Filter>Buttons</Filter>
+    </ClInclude>
+    <ClInclude Include="ButtonReturn.h">
+      <Filter>Buttons</Filter>
+    </ClInclude>
+    <ClInclude Include="FichePersonnage.hpp">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Project3.rc">
+      <Filter>Fichiers de ressources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

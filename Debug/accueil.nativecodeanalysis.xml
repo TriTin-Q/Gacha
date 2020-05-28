@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\nemukaito\source\repos\project3\project3</FILEPATH>
+      <FILENAME>accueil.cpp</FILENAME>
+      <LINE>73</LINE>
+      <COLUMN>9</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'Accueil::gameState_btn' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>Accueil::{ctor}</FUNCTION>
+    <DECORATED>??0Accueil@@QAE@PAVRenderWindow@sf@@PAV?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@HU?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@std@@@2@@std@@PAV?$stack@PAVState@@V?$deque@PAVState@@V?$allocator@PAVState@@@std@@@std@@@4@@Z</DECORATED>
+    <FUNCLINE>73</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

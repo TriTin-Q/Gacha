@@ -1,0 +1,111 @@
+﻿  Box.cpp
+c:\users\nemukaito\source\repos\project3\project3\box.cpp(67): warning C4244: 'argument' : conversion de 'T' en 'float', perte possible de données
+          with
+          [
+              T=unsigned int
+          ]
+c:\users\nemukaito\source\repos\project3\project3\box.cpp(85): warning C4244: 'argument' : conversion de 'double' en 'float', perte possible de données
+c:\users\nemukaito\source\repos\project3\project3\box.cpp(103): warning C4244: 'argument' : conversion de 'double' en 'float', perte possible de données
+c:\users\nemukaito\source\repos\project3\project3\box.cpp(122): warning C4244: 'argument' : conversion de 'T' en 'float', perte possible de données
+          with
+          [
+              T=unsigned int
+          ]
+c:\users\nemukaito\source\repos\project3\project3\box.cpp(140): warning C4244: 'argument' : conversion de 'T' en 'float', perte possible de données
+          with
+          [
+              T=unsigned int
+          ]
+c:\users\nemukaito\source\repos\project3\project3\box.cpp(159): warning C4244: 'argument' : conversion de 'T' en 'float', perte possible de données
+          with
+          [
+              T=unsigned int
+          ]
+c:\users\nemukaito\source\repos\project3\project3\box.cpp(177): warning C4244: 'argument' : conversion de 'T' en 'float', perte possible de données
+          with
+          [
+              T=unsigned int
+          ]
+c:\users\nemukaito\source\repos\project3\project3\box.cpp(196): warning C4244: 'argument' : conversion de 'T' en 'float', perte possible de données
+          with
+          [
+              T=unsigned int
+          ]
+c:\users\nemukaito\source\repos\project3\project3\box.cpp(213): warning C4244: 'argument' : conversion de 'T' en 'float', perte possible de données
+          with
+          [
+              T=unsigned int
+          ]
+c:\users\nemukaito\source\repos\project3\project3\box.cpp(233): warning C4244: 'argument' : conversion de 'double' en 'float', perte possible de données
+c:\users\nemukaito\source\repos\project3\project3\box.cpp(251): warning C4244: 'argument' : conversion de 'double' en 'float', perte possible de données
+c:\users\nemukaito\source\repos\project3\project3\box.cpp(270): warning C4244: 'argument' : conversion de 'T' en 'float', perte possible de données
+          with
+          [
+              T=unsigned int
+          ]
+c:\users\nemukaito\source\repos\project3\project3\box.cpp(288): warning C4244: 'argument' : conversion de 'T' en 'float', perte possible de données
+          with
+          [
+              T=unsigned int
+          ]
+c:\users\nemukaito\source\repos\project3\project3\box.cpp(307): warning C4244: 'argument' : conversion de 'T' en 'float', perte possible de données
+          with
+          [
+              T=unsigned int
+          ]
+c:\users\nemukaito\source\repos\project3\project3\box.cpp(325): warning C4244: 'argument' : conversion de 'T' en 'float', perte possible de données
+          with
+          [
+              T=unsigned int
+          ]
+c:\users\nemukaito\source\repos\project3\project3\box.cpp(345): warning C4244: 'argument' : conversion de 'T' en 'float', perte possible de données
+          with
+          [
+              T=unsigned int
+          ]
+c:\users\nemukaito\source\repos\project3\project3\box.cpp(362): warning C4244: 'argument' : conversion de 'T' en 'float', perte possible de données
+          with
+          [
+              T=unsigned int
+          ]
+c:\users\nemukaito\source\repos\project3\project3\box.cpp(382): warning C4244: 'argument' : conversion de 'double' en 'float', perte possible de données
+c:\users\nemukaito\source\repos\project3\project3\box.cpp(400): warning C4244: 'argument' : conversion de 'double' en 'float', perte possible de données
+c:\users\nemukaito\source\repos\project3\project3\box.cpp(419): warning C4244: 'argument' : conversion de 'T' en 'float', perte possible de données
+          with
+          [
+              T=unsigned int
+          ]
+c:\users\nemukaito\source\repos\project3\project3\box.cpp(437): warning C4244: 'argument' : conversion de 'T' en 'float', perte possible de données
+          with
+          [
+              T=unsigned int
+          ]
+c:\users\nemukaito\source\repos\project3\project3\box.cpp(456): warning C4244: 'argument' : conversion de 'T' en 'float', perte possible de données
+          with
+          [
+              T=unsigned int
+          ]
+c:\users\nemukaito\source\repos\project3\project3\box.cpp(474): warning C4244: 'argument' : conversion de 'T' en 'float', perte possible de données
+          with
+          [
+              T=unsigned int
+          ]
+c:\users\nemukaito\source\repos\project3\project3\box.cpp(510): warning C4244: 'argument' : conversion de 'T' en 'T', perte possible de données
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+c:\users\nemukaito\source\repos\project3\project3\box.cpp(509): warning C4244: 'argument' : conversion de 'T' en 'T', perte possible de données
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+  Project3.vcxproj -> C:\Users\Nemukaito\source\repos\Project3\Debug\Project3.exe

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\nemukaito\source\repos\project3\project3</FILEPATH>
+      <FILENAME>personnage.cpp</FILENAME>
+      <LINE>3</LINE>
+      <COLUMN>12</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'Personnage::pm' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>Personnage::{ctor}</FUNCTION>
+    <DECORATED>??0Personnage@@QAE@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0MMHMMM0MH@Z</DECORATED>
+    <FUNCLINE>3</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\nemukaito\source\repos\project3\project3</FILEPATH>
+      <FILENAME>personnage.cpp</FILENAME>
+      <LINE>3</LINE>
+      <COLUMN>12</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'Personnage::perso' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>Personnage::{ctor}</FUNCTION>
+    <DECORATED>??0Personnage@@QAE@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0MMHMMM0MH@Z</DECORATED>
+    <FUNCLINE>3</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\nemukaito\source\repos\project3\project3</FILEPATH>
+      <FILENAME>personnage.cpp</FILENAME>
+      <LINE>3</LINE>
+      <COLUMN>12</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'Personnage::tab_Personnage' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>Personnage::{ctor}</FUNCTION>
+    <DECORATED>??0Personnage@@QAE@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0MMHMMM0MH@Z</DECORATED>
+    <FUNCLINE>3</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>
