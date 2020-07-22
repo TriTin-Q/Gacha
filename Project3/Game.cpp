@@ -75,6 +75,15 @@ void Game::initKeys()
 
 }
 
+void Game::initSound()
+{
+	if (!this->buffer.loadFromFile("Data/sound/menu.wav"))
+		throw("ERROR, SOUND");
+	// on charge quelque chose dans le buffer...
+	this->buffer.loadFromFile("Data/sound/menu.wav");
+	this->sound.setBuffer(buffer);
+}
+
 void Game::initStates()
 {
 	this->states.push(new MainMenuState(this->window, &this->supportedKeys, &this->states));
@@ -87,6 +96,7 @@ Game::Game(){
 	initWindow();
 	initKeys();
 	initStates();
+	initSound();
 
 }
 
@@ -157,6 +167,8 @@ void Game::render()
 
 void Game::run()
 {
+	this->sound.play();
+
 	while (window->isOpen())
 	{
 		updateDt();

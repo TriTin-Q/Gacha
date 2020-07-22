@@ -18,6 +18,9 @@ private:
 	sf::Clock dtClock;
 	float dt;
 
+	sf::SoundBuffer buffer;
+	sf::Sound sound;
+
 	std::stack<State*> states;
 
 
@@ -28,6 +31,7 @@ private:
 	void initWindow();
 	void initStates();
 	void initKeys();
+	void initSound();
 
 public:
 	Game();

@@ -50,28 +50,28 @@ void ButtonReturn::update(const sf::Vector2f mousePos)
 	switch (this->buttonState)
 	{
 	case IDLE_BTN:
-		this->icon.setSize(sf::Vector2f(20, 20));
+		this->icon.setSize(sf::Vector2f(40,40));
 		this->text.setCharacterSize(16);
 		this->text.setFillColor(sf::Color(0, 0, 0, 255));
 
 		std::cout << "BTN IS IDLE" << "\n";
 		break;
 	case HOVER_BTN:
-		this->icon.setSize(sf::Vector2f(30, 30));
+		this->icon.setSize(sf::Vector2f(45, 45));
 		this->text.setCharacterSize(18);
 		this->text.setFillColor(sf::Color(0, 0, 0, 255));
 
 		std::cout << "BTN IS HOVER" << "\n";
 		break;
 	case ACTIVE_BTN:
-		this->icon.setSize(sf::Vector2f(20, 20));
+		this->icon.setSize(sf::Vector2f(40, 40));
 		this->text.setCharacterSize(16);
 		this->text.setFillColor(sf::Color(0, 0, 0, 255));
 		std::cout << "BTN IS ACTIVE" << "\n";
 
 		break;
 	default:
-		this->icon.setSize(sf::Vector2f(20, 20));
+		this->icon.setSize(sf::Vector2f(40,40));
 		this->text.setFillColor(sf::Color(0, 0, 0, 0));
 		std::cout << "BTN IS BY DEFAULT" << "\n";
 		break;

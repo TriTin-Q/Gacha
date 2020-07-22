@@ -5,6 +5,8 @@
 #include "ButtonInGame.hpp"
 #include "State.hpp"
 #include "Box.hpp"
+#include "Scenario.hpp"
+#include "SummonMenu.hpp"
 
 
 class Accueil :
@@ -16,6 +18,9 @@ private:
 	sf::Font font;
 
 	std::map<std::string, ButtonInGame*> buttons;
+
+	sf::RectangleShape fond;
+	//sf::Texture fondTexture;
 
 	sf::RectangleShape icon;
 	sf::Texture  iconTexture;

@@ -35,13 +35,13 @@ void MainMenuState::initKeybinds()
 void MainMenuState::initButton()
 {
 	this->buttons["GAME_STATE"] = new Button(this->window->getSize().x /2.35,
-		this->window->getSize().y /1.4, 150, 50
+		this->window->getSize().y /1.4, 200, 75
 		, &this->font, "Start to be a Hero !",
 		sf::Color(242, 171, 56, 200), sf::Color(250, 217, 55, 255),
 		sf::Color(255, 255, 255, 200));
 
 	this->buttons["EXIT_STATE"] = new Button(this->window->getSize().x / 2.25 
-		, this->window->getSize().y/1.2, 100, 25
+		, this->window->getSize().y/1.2, 150, 50
 		, &this->font, "Quit the game",
 		sf::Color(247, 5, 33, 200), sf::Color(247, 5, 33, 255),
 		sf::Color(247, 5, 33, 200));
@@ -60,9 +60,20 @@ void MainMenuState::initBackground()
 	this->background.setTexture(&this->background_image);
 }
 
+void MainMenuState::initSound()
+{
+
+	//if (!this->buffer.loadFromFile("Data/sound/menu.wav"))
+	//	throw("ERROR, SOUND");
+	//// on charge quelque chose dans le buffer...
+	//this->buffer.loadFromFile("Data/sound/menu.wav");
+	//this->sound.setBuffer(buffer);
+}
+
 MainMenuState::MainMenuState(sf::RenderWindow* window, std::map<std::string, int>* supportedKeys, std::stack<State*>* states)
 	:State(window, supportedKeys,states)
 {
+	this->initSound();
 	this->initVariables();
 	this->initFonts();
 	this->initKeybinds();
@@ -107,8 +118,13 @@ void MainMenuState::updateButton()
 	//Start Game 
 	if (this->buttons["GAME_STATE"]->isPressed()) {
 		this->states->push(new Accueil(this->window, this->supportedKeys, this->states));
-
 	}
+	 
+	//A FAIRE
+	//if (this->buttons["EXIT_STATE"]->isPressed()) {
+	//	this->states->push(new Accueil(this->window, this->supportedKeys, this->states));
+
+	//}
 
 	
 
@@ -131,18 +147,22 @@ void MainMenuState::endState()
 
 void MainMenuState::update(const float& dt)
 {
+	//this->sound.play();
 	this->updateMousePosition();
 	this->updateInput(dt);
 	/*system("cls");
 	std::cout << this->mousePosView.x <<","<<this->mousePosView.y << "\n";*/
 	this->updateButton();
+
 }
 
 void MainMenuState::render(sf::RenderTarget* target)
 {
+
 	if (!target) {
 		target = this->window;
 	}
 	target->draw(this->background);
 	this->renderButton(target);
+
 }

@@ -12,10 +12,9 @@ void Box::initFonts()
 
 void Box::initButton(Personnage perso)
 {
-	/*int i = 0;
-	while (tabNom[i] != "") {
+	int x = 350;
+	int y;
 
-	}*/
 		std::string Deku = "Deku";
 		bool testDeku = perso.obtenu(Deku);
 
@@ -62,7 +61,7 @@ void Box::initButton(Personnage perso)
 			this->icon.setTexture(&this->iconTexture);
 			std::cout << "THE CHARACH ICON IS OK ! " << "\n";
 			this->buttons["CHARAC_DEKU"] = new ButtonCharacter(
-				200
+				x
 				,
 				this->window->getSize().y / 12
 				,
@@ -80,7 +79,7 @@ void Box::initButton(Personnage perso)
 			this->icon2.setTexture(&this->iconTexture2);
 			std::cout << "THE CHARACH ICON IS OK ! " << "\n";
 			this->buttons["CHARAC_BAKUGO"] = new ButtonCharacter(
-				200
+				x
 				,
 				this->window->getSize().y / 3.5
 				,
@@ -98,7 +97,7 @@ void Box::initButton(Personnage perso)
 			this->icon2.setTexture(&this->iconTexture2);
 			std::cout << "THE CHARACH ICON IS OK ! " << "\n";
 			this->buttons["CHARAC_BAKUGO_NOTYET"] = new ButtonCharacter(
-				200
+				x
 				,
 				this->window->getSize().y / 3.5
 				,
@@ -117,7 +116,7 @@ void Box::initButton(Personnage perso)
 			this->icon3.setTexture(&this->iconTexture3);
 			std::cout << "THE CHARACH ICON IS OK ! " << "\n";
 			this->buttons["CHARAC_OCHACO"] = new ButtonCharacter(
-				200
+				x
 				,
 				this->window->getSize().y / 2
 				,
@@ -135,7 +134,7 @@ void Box::initButton(Personnage perso)
 			this->icon3.setTexture(&this->iconTexture3);
 			std::cout << "THE CHARACH ICON IS OK ! " << "\n";
 			this->buttons["CHARAC_OCHACO_NOTYET"] = new ButtonCharacter(
-				200
+				x
 				,
 				this->window->getSize().y / 2
 				,
@@ -154,9 +153,9 @@ void Box::initButton(Personnage perso)
 			this->icon4.setTexture(&this->iconTexture4);
 			std::cout << "THE CHARACH ICON IS OK ! " << "\n";
 			this->buttons["CHARAC_SHOTO"] = new ButtonCharacter(
-				200
+				x
 				,
-				this->window->getSize().y - 150
+				this->window->getSize().y / 1.4
 				,
 
 				&this->font, "Shoto \n LvL 1"
@@ -172,9 +171,9 @@ void Box::initButton(Personnage perso)
 			this->icon4.setTexture(&this->iconTexture4);
 			std::cout << "THE CHARACH ICON IS OK ! " << "\n";
 			this->buttons["CHARAC_SHOTO_NOTYET"] = new ButtonCharacter(
-				200
+				x
 				,
-				this->window->getSize().y -200
+				this->window->getSize().y /1.4
 				,
 
 				&this->font, "Unavaible"
@@ -186,12 +185,14 @@ void Box::initButton(Personnage perso)
 		}
 	}
 
+	//Deuxième colonne
+
 	if (testTsuyu == 1) {
 		if (this->iconTexture5.loadFromFile("Data/Personnages/Tsuyu_icon.png")) {
 			this->icon5.setTexture(&this->iconTexture5);
 			std::cout << "THE CHARACH ICON IS OK ! " << "\n";
 			this->buttons["CHARAC_TSUYU"] = new ButtonCharacter(
-				600
+				x + 350
 				,
 				this->window->getSize().y / 12
 				,
@@ -208,7 +209,7 @@ void Box::initButton(Personnage perso)
 			this->icon5.setTexture(&this->iconTexture5);
 			std::cout << "THE CHARACH ICON IS OK ! " << "\n";
 			this->buttons["CHARAC_TSUYU_NOTYET"] = new ButtonCharacter(
-				600
+				x + 350
 				,
 				this->window->getSize().y /12
 				,
@@ -228,7 +229,7 @@ void Box::initButton(Personnage perso)
 			this->icon6.setTexture(&this->iconTexture6);
 			std::cout << "THE CHARACH ICON IS OK ! " << "\n";
 			this->buttons["CHARAC_FUMIKAGE"] = new ButtonCharacter(
-				600
+				x + 350
 				,
 				this->window->getSize().y / 3.5
 				,
@@ -246,7 +247,7 @@ void Box::initButton(Personnage perso)
 			this->icon6.setTexture(&this->iconTexture6);
 			std::cout << "THE CHARACH ICON IS OK ! " << "\n";
 			this->buttons["CHARAC_FUMIKAGE_NOTYET"] = new ButtonCharacter(
-				600
+				x + 350
 				,
 				this->window->getSize().y / 3.5
 				,
@@ -265,7 +266,7 @@ void Box::initButton(Personnage perso)
 			this->icon7.setTexture(&this->iconTexture7);
 			std::cout << "THE CHARACH ICON IS OK ! " << "\n";
 			this->buttons["CHARAC_MINA"] = new ButtonCharacter(
-				600
+				x + 350
 				,
 				this->window->getSize().y / 2
 				,
@@ -283,7 +284,7 @@ void Box::initButton(Personnage perso)
 			this->icon7.setTexture(&this->iconTexture7);
 			std::cout << "THE CHARACH ICON IS OK ! " << "\n";
 			this->buttons["CHARAC_MINA_NOTYET"] = new ButtonCharacter(
-				600
+				x + 350
 				,
 				this->window->getSize().y / 2
 				,
@@ -302,9 +303,9 @@ void Box::initButton(Personnage perso)
 			this->icon8.setTexture(&this->iconTexture8);
 			std::cout << "THE CHARACH ICON IS OK ! " << "\n";
 			this->buttons["CHARAC_MOMO"] = new ButtonCharacter(
-				600
+				x + 350
 				,
-				this->window->getSize().y - 150
+				this->window->getSize().y / 1.4
 				,
 
 				&this->font, "Momo\n Creati \n LvL 1"
@@ -320,9 +321,9 @@ void Box::initButton(Personnage perso)
 			this->icon8.setTexture(&this->iconTexture8);
 			std::cout << "THE CHARACH ICON IS OK ! " << "\n";
 			this->buttons["CHARAC_MOMO_NOTYET"] = new ButtonCharacter(
-				600
+				x + 350
 				,
-				this->window->getSize().y - 200
+				this->window->getSize().y / 1.4
 				,
 
 				&this->font, "Unavaible"
@@ -334,13 +335,13 @@ void Box::initButton(Personnage perso)
 		}
 	}
 
-
+	//Troisème colonne
 	if (testEijiro == 1) {
 		if (this->iconTexture9.loadFromFile("Data/Personnages/Eijiro_icon.png")) {
 			this->icon9.setTexture(&this->iconTexture5);
 			std::cout << "THE CHARACH ICON IS OK ! " << "\n";
 			this->buttons["CHARAC_EIJIRO"] = new ButtonCharacter(
-				1000
+				x * 3
 				,
 				this->window->getSize().y / 12
 				,
@@ -357,7 +358,7 @@ void Box::initButton(Personnage perso)
 			this->icon9.setTexture(&this->iconTexture9);
 			std::cout << "THE CHARACH ICON IS OK ! " << "\n";
 			this->buttons["CHARAC_EIJIRO_NOTYET"] = new ButtonCharacter(
-				1000
+				x * 3
 				,
 				this->window->getSize().y / 12
 				,
@@ -377,7 +378,7 @@ void Box::initButton(Personnage perso)
 			this->icon10.setTexture(&this->iconTexture6);
 			std::cout << "THE CHARACH ICON IS OK ! " << "\n";
 			this->buttons["CHARAC_DENKI"] = new ButtonCharacter(
-				1000
+				x * 3
 				,
 				this->window->getSize().y / 3.5
 				,
@@ -395,7 +396,7 @@ void Box::initButton(Personnage perso)
 			this->icon10.setTexture(&this->iconTexture10);
 			std::cout << "THE CHARACH ICON IS OK ! " << "\n";
 			this->buttons["CHARAC_DENKI_NOTYET"] = new ButtonCharacter(
-				1000
+				x * 3
 				,
 				this->window->getSize().y / 3.5
 				,
@@ -414,7 +415,7 @@ void Box::initButton(Personnage perso)
 			this->icon11.setTexture(&this->iconTexture11);
 			std::cout << "THE CHARACH ICON IS OK ! " << "\n";
 			this->buttons["CHARAC_IIDA"] = new ButtonCharacter(
-				1000
+				x * 3
 				,
 				this->window->getSize().y / 2
 				,
@@ -432,7 +433,7 @@ void Box::initButton(Personnage perso)
 			this->icon11.setTexture(&this->iconTexture11);
 			std::cout << "THE CHARACH ICON IS OK ! " << "\n";
 			this->buttons["CHARAC_IIDA_NOTYET"] = new ButtonCharacter(
-				1000
+				x * 3
 				,
 				this->window->getSize().y / 2
 				,
@@ -451,9 +452,9 @@ void Box::initButton(Personnage perso)
 			this->icon12.setTexture(&this->iconTexture12);
 			std::cout << "THE CHARACH ICON IS OK ! " << "\n";
 			this->buttons["CHARAC_KYOKA"] = new ButtonCharacter(
-				1000
+				x * 3
 				,
-				this->window->getSize().y - 150
+				this->window->getSize().y / 1.4
 				,
 
 				&this->font, "Kyoka\n Earphone-Jack \n LvL 1"
@@ -469,9 +470,9 @@ void Box::initButton(Personnage perso)
 			this->icon12.setTexture(&this->iconTexture12);
 			std::cout << "THE CHARACH ICON IS OK ! " << "\n";
 			this->buttons["CHARAC_KYOKA_NOTYET"] = new ButtonCharacter(
-				1000
+				x * 3
 				,
-				this->window->getSize().y - 200
+				this->window->getSize().y / 1.4
 				,
 
 				&this->font, "Unavaible"
@@ -593,18 +594,18 @@ void Box::updateButton()
 
 	std::string Bakugo = "Bakugo";
 	bool testBakugo = perso.obtenu(Bakugo);
-
+	std::cout << "Deku obtenu ? : " << testDeku << "\n";
 	//FichePersonnage
 	if (testDeku == 1) {
 		if (this->buttons["CHARAC_DEKU"]->isPressed()) {
-			this->states->push(new FichePersonnage(this->window, this->supportedKeys, this->states, 0, 0));
+			this->states->push(new FichePersonnage(this->window, this->supportedKeys, this->states, 0, 0,"green"));
 
 		}
 	}
 
 	if (testBakugo == 1) {
 		if (this->buttons["CHARAC_BAKUGO"]->isPressed()) {
-			this->states->push(new FichePersonnage(this->window, this->supportedKeys, this->states, 1, 0));
+			this->states->push(new FichePersonnage(this->window, this->supportedKeys, this->states, 1, 0,"red"));
 
 		}
 	}

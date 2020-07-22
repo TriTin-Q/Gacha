@@ -17,8 +17,8 @@ void Accueil::initButton()
 	if (this->iconTexture.loadFromFile("Data/Personnages.png")) {
 		this->icon.setTexture(&this->iconTexture);
 		std::cout << "THE CHARACH ICON IS OK ! " << "\n";
-		this->buttons["CHARAC_STATE"] = new ButtonInGame(this->window->getSize().x / 20,
-			this->window->getSize().y / 12 ,&this->font, "Personnages",
+		this->buttons["CHARAC_STATE"] = new ButtonInGame(50,
+			100 ,&this->font, "Personnages",
 			this->icon, this->iconTexture);
 	}
 	else {
@@ -27,8 +27,8 @@ void Accueil::initButton()
 	if (this->iconTexture2.loadFromFile("Data/Fight.png")) {
 		this->icon2.setTexture(&this->iconTexture2);
 		std::cout << "THE CHARACH ICON IS OK ! " << "\n";
-		this->buttons["FIGHT_STATE"] = new ButtonInGame(this->window->getSize().x / 20,
-			this->window->getSize().y / 3.5, &this->font, "Combats",
+		this->buttons["FIGHT_STATE"] = new ButtonInGame(50,
+			300, &this->font, "Combats",
 			this->icon2, this->iconTexture2);
 	}
 	else {
@@ -37,8 +37,8 @@ void Accueil::initButton()
 	if (this->iconTexture3.loadFromFile("Data/Gacha.png")) {
 		this->icon3.setTexture(&this->iconTexture3);
 		std::cout << "THE CHARACH ICON IS OK ! " << "\n";
-		this->buttons["GACHA_STATE"] = new ButtonInGame(this->window->getSize().x / 20,
-			this->window->getSize().y / 1.5, &this->font, "Invoquer des héro !",
+		this->buttons["GACHA_STATE"] = new ButtonInGame(50,
+			this->window->getSize().y - 300, &this->font, "Recrute!",
 			this->icon3, this->iconTexture3);
 	}
 	else {
@@ -49,6 +49,7 @@ void Accueil::initButton()
 
 void Accueil::initBackground()
 {
+
 	this->background.setSize(
 		sf::Vector2f(this->window->getSize().x
 			, this->window->getSize().y)
@@ -59,6 +60,13 @@ void Accueil::initBackground()
 		throw "ERROR PICTURE OF BACKGROUND !";
 	}
 	this->background.setTexture(&this->background_image);
+
+	this->fond.setPosition(0, 0);
+	this->fond.setSize(sf::Vector2f(250, this->window->getSize().y));
+	this->fond.setFillColor(sf::Color(255, 255, 255, 150));
+	this->fond.setOutlineThickness(3);
+	this->fond.setOutlineColor(sf::Color(0, 0, 0, 255));
+
 }
 
 void Accueil::initKeybinds()
@@ -122,6 +130,15 @@ void Accueil::updateButton()
 		this->states->push(new Box(this->window, this->supportedKeys, this->states));
 
 	}
+
+	if (this->buttons["FIGHT_STATE"]->isPressed()) {
+		this->states->push(new Scenario(this->window, this->supportedKeys, this->states));
+
+	}
+	if (this->buttons["GACHA_STATE"]->isPressed()) {
+		this->states->push(new SummonMenu(this->window, this->supportedKeys, this->states));
+
+	}
 	/*if (this->buttons["CHARAC_STATE"]->isPressed()) {
 		this->states->push(new GameState(this->window, this->supportedKeys, this->states));
 
@@ -149,6 +166,8 @@ void Accueil::render(sf::RenderTarget* target)
 		target = this->window;
 	}
 	target->draw(this->background);
+	target->draw(this->fond);
+
 	this->renderButton(target);
 
 }

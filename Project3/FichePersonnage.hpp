@@ -20,20 +20,38 @@ private:
 
 	sf::Text textNom;
 
-	sf::RectangleShape iconPersonnage;
-	sf::Texture  iconPersonnageTexture;
+	sf::RectangleShape logo;
+	sf::Texture  logoTexture;
 
-	sf::RectangleShape iconPersonnageFond;
+	sf::RectangleShape casual;
+	sf::Texture casualTexture;
 
+	sf::RectangleShape uniforme;
+	sf::Texture uniformeTexture;
 
-	sf::RectangleShape iconInformation;
+	sf::RectangleShape costume;
+	sf::Texture costumeTexture;
+
+	sf::RectangleShape firstBack;
+	sf::Texture firstBackTexture;
+
+	sf::RectangleShape secondBack;
+
+	sf::RectangleShape thirdBack;
+
+	sf::RectangleShape fourthBack;
+
 	sf::Text textInformation;
 
-	sf::RectangleShape iconCapacity;
-	sf::Text textCapacity;
+	sf::Text textName;
+	sf::Text textCasual;
+	sf::Text textUniforme;
+	sf::Text textCostume;
+
 
 	sf::RectangleShape iconStat;
-	sf::Text textStats;
+	sf::Text textHeroName;
+
 
 	sf::RectangleShape iconReturn;
 	sf::Texture  iconReturnTexture;
@@ -42,15 +60,16 @@ private:
 	void initFonts();
 	void initKeybinds();
 	void initButton();
-	void initBackground(int VilOrHero);
-	void initInformation(int indice);
+	void initBackground(std::string color);
+	void initInformation(int indice, int vilOrHero);
 	
 
 
 public:
 	//Indice : 0-Deku, 1-Bakugo, 2-Tomura
 	//Villain_Or_Hero : Pour le background 
- 	FichePersonnage(sf::RenderWindow* window, std::map<std::string, int>* supportedKeys, std::stack<State*>* states, int indice, int Villain_Or_Hero);
+ 	FichePersonnage(sf::RenderWindow* window, std::map<std::string, int>* supportedKeys, std::stack<State*>* states,
+		int indice, int Villain_Or_Hero, std::string color);
 	virtual ~FichePersonnage();
 
 	void endState();

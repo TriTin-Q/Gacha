@@ -14,6 +14,10 @@ private:
 	sf::Texture  background_image;
 	sf::Font font;
 
+	sf::SoundBuffer buffer;
+	sf::Sound sound;
+
+
 	std::map<std::string, Button*> buttons;
 
 	Button * gameState_btn;
@@ -25,6 +29,7 @@ private:
 	void initKeybinds();
 	void initButton();
 	void initBackground();
+	void initSound();
 
 protected:
 

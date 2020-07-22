@@ -16,7 +16,7 @@ ButtonCharacter::ButtonCharacter(float x, float y,
 	//this->text.setCharacterSize(18);
 	this->text.setPosition(
 		//(this->icon.getPosition().x + (this->icon.getGlobalBounds().width / 2.f) - this->text.getGlobalBounds().width / 2.f + 250)
-		this->icon.getPosition().x + 120
+		this->icon.getPosition().x + 170
 		,
 		this->icon.getPosition().y + 40
 		//(this->icon.getPosition().y + (this->icon.getGlobalBounds().height / 2.f) - this->text.getGlobalBounds().height / 2.f + 70)
@@ -56,28 +56,28 @@ void ButtonCharacter::update(const sf::Vector2f mousePos)
 	switch (this->buttonState)
 	{
 	case IDLE:
-		this->icon.setSize(sf::Vector2f(100, 100));
-		this->text.setCharacterSize(16);
+		this->icon.setSize(sf::Vector2f(150,150));
+		this->text.setCharacterSize(20);
 		this->text.setFillColor(sf::Color(0, 0, 0, 255));
 
 		std::cout << "BTN IS IDLE" << "\n";
 		break;
 	case HOVER:
-		this->icon.setSize(sf::Vector2f(110 , 110));
-		this->text.setCharacterSize(18);
+		this->icon.setSize(sf::Vector2f(160,160));
+		this->text.setCharacterSize(22);
 		this->text.setFillColor(sf::Color(0, 0, 0, 255));
 
 		std::cout << "BTN IS HOVER" << "\n";
 		break;
 	case ACTIVE:
-		this->icon.setSize(sf::Vector2f(100, 100));
-		this->text.setCharacterSize(16);
+		this->icon.setSize(sf::Vector2f(150, 150));
+		this->text.setCharacterSize(20);
 		this->text.setFillColor(sf::Color(0, 0, 0, 255));
 		std::cout << "BTN IS ACTIVE" << "\n";
 
 		break;
 	default:
-		this->icon.setSize(sf::Vector2f(100, 100));
+		this->icon.setSize(sf::Vector2f(150, 150));
 		this->text.setFillColor(sf::Color(0, 0, 0, 0));
 		std::cout << "BTN IS BY DEFAULT" << "\n";
 		break;
